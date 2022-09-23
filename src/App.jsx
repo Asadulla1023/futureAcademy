@@ -2,7 +2,7 @@ import React from "react";
 import Navigation from "./components/Navigation/Navigation";
 
 import { Routes, Route } from "react-router-dom";
-import { HomePage } from "./components";
+import { Courses, HomePage, Event } from "./components";
 
 import './styles/global.css'
 
@@ -15,6 +15,8 @@ function App() {
           <Routes>
             <Route path="*" element={<HomePage />} />
             <Route path="/" element={<HomePage />} />
+            <Route path="/course" element={<Courses/>}/>
+            <Route path="/events" element={<Event/>}/>
           </Routes>
         </div>
       </div>
