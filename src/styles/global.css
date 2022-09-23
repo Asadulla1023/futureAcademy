@@ -1,0 +1,13 @@
+.routers {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    left: 30px;
+    width: 1440px;
+}

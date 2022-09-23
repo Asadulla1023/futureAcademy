@@ -4,15 +4,19 @@ import Navigation from "./components/Navigation/Navigation";
 import { Routes, Route } from "react-router-dom";
 import { HomePage } from "./components";
 
+import './styles/global.css'
+
 function App() {
   return (
     <div className="App">
-      <Navigation />
+        <Navigation />
       <div className="routers">
-        <Routes>
-          <Route path="*" element={<HomePage />} />
-          <Route path="/" element={<HomePage />} />
-        </Routes>
+        <div className="container">
+          <Routes>
+            <Route path="*" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        </div>
       </div>
     </div>
   );
