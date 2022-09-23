@@ -1,1 +1,1 @@
-export * from './Couses'
+export * from './Courses'
