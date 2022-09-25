@@ -11,9 +11,16 @@
   transition: 0.3s linear;
 }
 
+.navbarContent > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+}
+
 .navbarContentActive {
-  transition: 0.3s linear;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 25px -0px;
+  transition: 0.5s linear;
+  box-shadow: #002b6473 0px 10px 25px -0px;
   display: flex;
   position: fixed;
   top: 0;
@@ -23,111 +30,153 @@
   align-items: center;
   width: 100%;
   height: 120px;
-  background: #3C4F76;
+  background: #00093c;
 }
 
-.navbarContentActive > ul {
+.navbarContentActive > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1440px;
+  width: 1280px;
 }
 
-.navbarContentActive > ul > li > a {
-  color: #fff;
+::-webkit-scrollbar {
+  background: #ffffff;
+  width: 10px;
 }
 
-.navbarContentActive > ul > li > a:hover {
-  color: #C0FDFB;
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: #00093c;
 }
 
-.navbarContent > ul > li > a:hover {
-  color: #252e2d;
+.navbarLogo {
+  width: 100px;
 }
 
-.navbarLi > a {
-  width: 190px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
+.navbarLogo > a {
+  width: 100%;
 }
 
-.navbarLi > a > p {
-  font-style: italic;
-  font-weight: 700;
-  letter-spacing: 2px;
-  position: relative;
-  left: -30px;
+.navbarLogo > a > img {
+  transition: 0.3s linear;
+  width: 100%;
 }
 
-.navbarContent > ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1440px;
-}
-
-ul {
+.navbarUl {
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 502px;
 }
 
-a {
-  color: #5D737E;
-  font-weight: 600;
-  transition: 0.2s ease-in-out;
-  text-decoration: none;
+.navbarUl > .courses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbarContent > ul > a:hover {
-  color: #64B6AC;
+.navbarUl > .courses > a {
+  font-weight: 700;
+  font-size: 14px;
 }
 
-a:active {
-  color: #5D737E;
-  opacity: 0.3;
-}
-
-.logoImg {
-  position: relative;
-  left: -20px;
-  width: 135px;
-  border-radius: 100px;
-}
-
-.navigators:first-child {
-  font-size: 22px;
+.navbarUl > .courses > a:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
 }
 
 .navigators {
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #02061c;
+  text-decoration: none;
 }
 
-.regionSelector > button {
-  color: #C0FDFB;
-  border-radius: 14px;
-  border: none;
-  background: #5D737E;
-  font-weight: 600;
+.navigatorsWh {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.contact > ul > li {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  font-size: 18px;
-  min-width: 170px;
-  height: 50px;
-  padding: 5px 15px;
-  cursor: pointer;
-  transition: 0.3s linear;
 }
 
-.regionSelector button:active {
-  opacity: 0.3;
+.contact > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
 }
 
-button {
-  transition: 0.3s linear;
+.contactLi {
+  list-style-type: none;
 }
 
-button:hover {
-  color: #5D737E;
-  background: #C0FDFB;
+.contactLi > a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #02061c;
+}
+
+.contactLiWh > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contactLiWh > select {
+  letter-spacing: 1.2px;
+  font-size: 16px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+}
+
+select {
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  font-size: 16px;
+  color: #02061c;
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+}
+
+option {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #02061c;
+  font-family: "Montserrat";
+}
+
+
+.authPageWh {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  gap: 10px;
+}
+
+.authPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  text-decoration: none;
+  color: #02061c;
+  font-weight: 700;
+  gap: 10px;
 }
