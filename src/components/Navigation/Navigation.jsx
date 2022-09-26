@@ -14,7 +14,6 @@ import userWh from './images/userWh.png'
 import styles from './Navigation.module.css'
 
 const Navigation = () => {
-  // const [modalOpen, setOpenModal] = useState(false)
   const [nav, setNav] = useState(false)
   const changeBgHandler = () => {
     if (window.scrollY >= 14.41) {
@@ -26,16 +25,6 @@ const Navigation = () => {
   }
 
   window.addEventListener('scroll', changeBgHandler)
-
-
-
-  const [rotate, setRotate] = useState(false)
-
-  rotate ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto"
-
-  const modalOpenHandler = () => {
-    setRotate(!rotate)
-  }
 
   return (
     <div className={nav ? styles.navbarContentActive : styles.navbarContent}>
